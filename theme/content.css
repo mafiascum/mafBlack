@@ -390,6 +390,11 @@ p.author {
 	font-size: 1em;
 	line-height: 1.2em;
 	clear: both;
+	display: none;
+}
+
+p.author.modified {
+	display: block;
 }
 
 /* Post signature */
@@ -447,7 +452,7 @@ ul.searchresults {
 /* Quote block */
 blockquote {
 	background: transparent none 6px 8px no-repeat;
-	border-left: 5px solid transparent;
+	border: 1px solid transparent;
 	font-size: 0.95em;
 	margin: 0.5em 1px 20px 25px;
 	overflow: hidden;
@@ -689,10 +694,9 @@ fieldset.polls dd div {
 	min-height: 80px;
 	border: 1px solid transparent;
 	border-width: 0 0 0 1px;
-	width: 22%;
-	float: right;
+	width: 16%;
+	float: left;
 	display: inline;
-	text-align: center;
 }
 
 .postprofile dd, .postprofile dt {
@@ -707,10 +711,6 @@ fieldset.polls dd div {
 
 .postprofile strong {
 	font-weight: normal;
-}
-
-.postprofile dt.no-profile-rank, .postprofile dd.profile-rank, .postprofile .search-result-date {
-	margin-bottom: 10px;
 }
 
 /* Post-profile avatars */

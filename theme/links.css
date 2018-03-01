@@ -15,8 +15,9 @@ a {
 /* Coloured usernames */
 .username-coloured {
 	font-weight: bold;
-	display: inline !important;
+	
 	padding: 0 !important;
+	text-shadow: 1px 1px #000000
 }
 
 /* Links on gradient backgrounds */

@@ -13,12 +13,12 @@ h1 {
 }
 
 h2 {
-	color: #eee;
+	color: #ffcc66;
 }
 
 h3 {
 	border-bottom-color: #ccc;
-	color: #eee;
+	color: #ffcc66;
 }
 
 hr {
@@ -54,24 +54,24 @@ a:hover, a:focus {
 
 /* Post body links */
 .postlink {
-	border-bottom-color: desaturate(#368AD2, 100%);
-	color: desaturate(#368AD2, 100%);
+	border-bottom-color: desaturate(#bbb, 100%);
+	color: desaturate(#bbb, 100%);
 }
 
 .postlink:visited {
-	border-bottom-color: desaturate(#5D8FBD, 100%);
-	color: desaturate(#5D8FBD, 100%);
+	border-bottom-color: desaturate(#bbb, 100%);
+	color: desaturate(#bbb, 100%);
 }
 
 .postlink:hover {
 	background-color: desaturate(#D0E4F6, 100%);
 	color: desaturate(#0D4473, 100%);
 }
-
+/**
 .signature a, .signature a:hover {
 	background-color: transparent;
 }
-
+**/
 /* Back to top of page */
 .top i {
 	color: #999;
@@ -90,10 +90,7 @@ a:hover, a:focus {
 }
 
 .headerbar {
-	background: #313131;
-	background: -moz-linear-gradient(top, #313131 0%, #1b1b1b 100%);
-	background: -webkit-linear-gradient(top, #313131 0%,#1b1b1b 100%);
-	background: linear-gradient(to bottom, #313131 0%,#1b1b1b 100%);
+	background: #1a1a1a;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313131', endColorstr='#1b1b1b',GradientType=0 );
 	color: #fff;
 	border-top: 0;
@@ -101,8 +98,9 @@ a:hover, a:focus {
 }
 
 .forabg, .forumbg {
-	background-color: #333;
-	border-top-color: #222;
+	//background-color: #333;
+	//border-top-color: #222;
+	background-color: #000;
 }
 
 li.header {
@@ -112,6 +110,7 @@ li.header {
 	// background: -webkit-linear-gradient(top,  #0b407a 0%,#072747 100%); /* Chrome10-25,Safari5.1-6 */
 	// background: linear-gradient(to bottom,  #0b407a 0%,#072747 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b407a', endColorstr='#072747',GradientType=0 ); /* IE6-9 */
+	/**
 	background: #434343;
 	background: -moz-linear-gradient(top, #434343 0%, #272727 100%);
 	background: -webkit-linear-gradient(top, #434343 0%,#272727 100%);
@@ -120,9 +119,12 @@ li.header {
 	border-bottom-color: #ef1128;
 	border-top-color: #434343;
 	box-shadow: inset 0 4px 5px -3px #999
+	**/
 }
 
 .navbar {
+	background: #1a1a1a;
+	/**
 	border-top: 1px solid #434343;
 	border-bottom: 1px solid #505050;
 	background: #222;
@@ -131,6 +133,7 @@ li.header {
 	background: -ms-linear-gradient(270deg, #282828 0%, #161616 100%);
 	background: -o-linear-gradient(270deg, #282828 0%, #161616 100%);
 	background: linear-gradient(0deg, #282828 0%, #161616 100%);
+	**/
 }
 
 .navbar-header {
@@ -155,11 +158,11 @@ li.header {
 }
 
 .post:target .content {
-	color: #ccc;
+	color: #fff;
 }
 
 .post:target h3 a {
-	color: #ccc;
+	color: #fff;
 }
 
 .bg1 {
@@ -352,23 +355,23 @@ dl.details dd {
 }
 
 .reported {
-	background-color: desaturate(#F7ECEF, 100%);
+	background-color: desaturate(#555, 100%);
 }
 
 li.reported:hover {
-	background-color: desaturate(#ECD5D8, 100%) !important;
+	background-color: desaturate(#555, 100%) !important;
 }
 .sticky, .announce {
 	/* you can add a background for stickies and announcements*/
 }
 
 div.rules {
-	background-color: desaturate(#ECD5D8, 100%);
+	background-color: desaturate(#555, 100%);
 	color: #BC2A4D;
 }
 
 p.post-notice {
-	background-color: desaturate(#ECD5D8, 100%);
+	background-color: desaturate(#555, 100%);
 	background-image: none;
 }
 
@@ -378,11 +381,11 @@ Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
 ul.topiclist li {
-	color: #aaa;
+	color: #DDDDDD;
 }
 
 ul.topiclist dd {
-	border-left-color: #707070;
+	border-left-color: #000;
 }
 
 .rtl ul.topiclist dd {
@@ -391,12 +394,15 @@ ul.topiclist dd {
 }
 
 li.row {
-	border-color: #171717;
+	background: #303030;
+	border: 1px solid #000;
+	/**
 	background: #171717;
 	background: -moz-linear-gradient(top, #282828 0%, #171717 100%);
 	background: -webkit-linear-gradient(top, #282828 0%,#171717 100%);
 	background: linear-gradient(to bottom, #282828 0%,#171717 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#171717',GradientType=0 );
+	**/
 }
 
 ul.topiclist li.row:first-child {
@@ -408,11 +414,14 @@ li.row strong {
 }
 
 li.row:hover {
+	background: #454545;
+	/***
 	background: #282828;
 	background: -moz-linear-gradient(top, #333 0%, #282828 100%);
 	background: -webkit-linear-gradient(top, #333 0%,#282828 100%);
 	background: linear-gradient(to bottom, #333 0%,#282828 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333', endColorstr='#282828',GradientType=0 );
+	***/
 }
 
 li.row:hover dd {
@@ -425,7 +434,7 @@ li.row:hover dd {
 }
 
 li.header dt, li.header dd {
-	color: #fff;
+	color: #ffcc66;
 	text-shadow: 0 -1px 0 #2c2c2c;
 }
 
@@ -438,7 +447,7 @@ li.header dt, li.header dd {
 /* Content container styles
 ----------------------------------------*/
 .content {
-	color: #ccc;
+	color: #fff;
 }
 
 .content h2, .panel h2 {
@@ -473,9 +482,9 @@ dl.faq dt {
 ----------------------------------------*/
 /* Quote block */
 blockquote {
-	background-color: desaturate(#eff8ff, 100%);
+	background-color: #404040;
 	background-image: url("./images/quote.gif");
-	border-color: desaturate(#77a8ce, 100%);
+	border-color: #000;
 }
 
 .rtl blockquote {
@@ -484,12 +493,12 @@ blockquote {
 
 blockquote blockquote {
 	/* Nested quotes */
-	background-color: desaturate(#e7f4fe, 100%);
+	background-color: #404040;
 }
 
 blockquote blockquote blockquote {
 	/* Nested quotes */
-	background-color: desaturate(#d5ecfe, 100%);
+	background-color: #404040;
 }
 
 
@@ -637,7 +646,7 @@ fieldset.polls dd div {
 /* Poster profile block
 ----------------------------------------*/
 .postprofile {
-	color: #bbb;
+	color: #dfdfdf;
 	border-color: #aaa;
 	dd:not(.profile-rank) {
 		text-align: left;
@@ -649,7 +658,7 @@ fieldset.polls dd div {
 }
 
 .postprofile strong {
-	color: #999;
+	color: #ffcc66;
 }
 
 .online {
@@ -746,13 +755,13 @@ Colours and backgrounds for buttons.css
 /* Search box
 --------------------------------------------- */
 
-.search-box .inputbox,
-.search-box .inputbox:hover,
-.search-box .inputbox:focus {
-	border-color: #999;
+.search-box {
+	.input-box,
+	.input-box:hover,
+	.input-box:focus {
+		border-color: #999;
+	}
 }
-
-
 
 /* Icon images
 ---------------------------------------- */
@@ -849,7 +858,7 @@ ul.cplist {
 }
 
 .panel-container .panel li.header dd, .panel-container .panel li.header dt {
-	color: #ccc;
+	color: #ffcc66;
 }
 
 .panel-container table.table1 thead th {
@@ -859,7 +868,7 @@ ul.cplist {
 
 .cp-main .pm-message {
 	border-color: desaturate(#DBDEE2, 100%);
-	background-color: #fff;
+	background-color: #353535;
 }
 
 /* CP tabbed menu
@@ -972,7 +981,7 @@ $desaturatedCADCEB: desaturate(#CADCEB, 100%);
 }
 
 .cp-main .pm {
-	background-color: #fff;
+	background-color: #353535;
 }
 
 /* Friends list */
@@ -1031,14 +1040,15 @@ Colours and backgrounds for forms.css
 /* General form styles
 ----------------------------------------*/
 select, input, .inputbox { /* msDark */
-	background-color: #161616 !important;
+	background-color: #eeeeee !important;
+	border-color: #880000;
 	border-radius: 2px;
 	padding: 2px;
 }
 
 select {
 	border-color: #999;
-	color: #ddd;
+	color: #000;
 	&:hover {
 		border-color: #ccc;
 	}
@@ -1080,7 +1090,7 @@ fieldset.quick-login input.inputbox {
 ----------------------------------------*/
 
 .message-box textarea {
-	color: #ccc;
+	color: #000;
 }
 
 .message-box textarea.drag-n-drop {
@@ -1096,15 +1106,15 @@ fieldset.quick-login input.inputbox {
 .inputbox {
 	background-color: #282828;
 	border-color: #999;
-	color: #ccc;
+	color: #000;
 }
 
 .inputbox:-moz-placeholder {
-	color: #999;
+	//color: #666;
 }
 
 .inputbox::-webkit-input-placeholder {
-	color: #999;
+	//color: #666;
 }
 
 .inputbox:hover {
@@ -1116,11 +1126,11 @@ fieldset.quick-login input.inputbox {
 }
 
 .inputbox:focus:-moz-placeholder {
-	color: transparent;
+	//color: transparent;
 }
 
 .inputbox:focus::-webkit-input-placeholder {
-	color: transparent;
+	//color: transparent;
 }
 
 
@@ -1283,7 +1293,7 @@ li.notification-reported strong, li.notification-disapproved strong {
 ----------------------------------------- */
 
 .page-body { /* msDark */
-	background-color: #111;
+	background-color: #1a1a1a;
 	color: #ccc;
 	h2 {
 		color: #ccc;
@@ -1304,4 +1314,19 @@ ul.cplist {
 #ucp li.header .list-inner {
 	padding-bottom: 7px;
 	padding-left: 8px;
+}
+
+p.author {
+	color: #ffcc66;
+}
+
+ul.topiclist {
+	li.header {
+		dl.row-item {
+			dd, dt {
+				color: #fff !important;
+				text-transform: uppercase;
+			}
+		}
+	}
 }

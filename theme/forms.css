@@ -415,7 +415,7 @@ input.button1:focus, input.button2:focus, input.button3:focus {
 #search-box input.inputbox {
 	background: rgba(0,0,0,0.5);
 	padding: 10px;
-	color: #FFFFFF;
+	color: #000;
 }
 
 #search-box button.button-search, #search-box a.button-search-end {
@@ -434,19 +434,19 @@ input.button1:focus, input.button2:focus, input.button3:focus {
 
 
 #search-box input.inputbox::-webkit-input-placeholder {
-   color: #FFFFFF;
+   color: #666;
 }
 
 #search-box input.inputbox:-moz-placeholder { /* Firefox 18- */
-   color: #FFFFFF;  
+   color: #666;  
 }
 
 #search-box input.inputbox::-moz-placeholder {  /* Firefox 19+ */
-   color: #FFFFFF;  
+   color: #666;  
 }
 
 #search-box input.inputbox:-ms-input-placeholder {  
-   color: #FFFFFF;  
+   color: #666;  
 }
 
 

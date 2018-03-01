@@ -558,8 +558,26 @@
 	}
 }
 
-@media (min-width: 700px) {
+@media (min-width: 701px) {
 	.postbody { width: 70%; }
+
+	.postprofile dt {
+		margin-top: 30px;
+	}
+
+	.postprofile dt.no-profile-rank, .postprofile dd.profile-rank, .postprofile .search-result-date {
+		margin-bottom: 10px;
+	}
+
+	.postprofile dd.profile-rank {
+		position: absolute;
+		top: 20px;
+	}
+
+	.postprofile .username-coloured {
+		position: absolute;
+		top: 5px;
+	}
 }
 
 @media (min-width: 850px) {
