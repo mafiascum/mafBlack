@@ -392,10 +392,6 @@ p.author {
 	clear: both;
 }
 
-p.author.modified {
-	display: block;
-}
-
 /* Post signature */
 .signature {
 	margin-top: 1.5em;
