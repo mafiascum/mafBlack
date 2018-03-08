@@ -18,7 +18,36 @@ function rgbToHsl(r, g, b){
 
     return [h, s, l];
 }
-
+function calculateBrightness(r,g,b){
+	var r1 = r/255;
+	var b1 = b/255;
+	var g1 = g/255;
+	var r2, g2, b2;
+	if (r1 <= 0.03928){
+		r2 = r1/12.92
+	} else {
+		r2 = Math.pow(((r1+0.055)/1.055),2.4);
+	}
+	if (g1 <= 0.03928){
+		g2 = g1/12.92
+	} else {
+		g2 = Math.pow(((g1+0.055)/1.055),2.4);
+	}
+	if (b1 <= 0.03928){
+		b2 = b1/12.92
+	} else {
+		b2 = Math.pow(((b1+0.055)/1.055),2.4);
+	}
+	return .2126*r2 + .7152*g2 + .0722*b2; 
+}
+function test(){
+}
+function calcContrast (r1,g1,b1,r2,g2,b2){
+	var brightness1 = calculateBrightness(r1,g1,b1);
+	var brightness2 = 0.02518685962736163;
+	
+	return (brightness1 + 0.05)/(brightness2 + 0.05);
+}
 function hslToRgb(h, s, l){
     var r, g, b;
 
@@ -43,22 +72,38 @@ function hslToRgb(h, s, l){
 
     return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
 }
-
-function getLightestShade(r,g,b){
+	function lightenTenPercent(r,g,b){
 		var hsl = rgbToHsl(r,g,b);
-		hsl[2] = hsl[2] * 1.1;
-		var rgb = hslToRgb(hsl[0],hsl[1],hsl[2]);
+		hsl[2] = hsl[2] * 1.175;
+		return hslToRgb(hsl[0],hsl[1],hsl[2]);
+	}
+	function getLightestShade(r,g,b){
+	rgb = [r,g,b];
+		var count = 0;
+		if (calcContrast(rgb[0],rgb[1],rgb[2],44,44,44) > 1){
+			while (calcContrast(rgb[0],rgb[1],rgb[2],44,44,44) < 4){
+				rgb = lightenTenPercent(rgb[0],rgb[1],rgb[2]);
+				count++;
+				if (count>5){
+					break;
+				}
+			}
+		}
 		return 'rgb(' + rgb[0] + ', ' + rgb[1] + ', ' + rgb[2] + ')';
-}
+	}
 
 function adjustColor(index, element) {
-    var colour = element.style.color;
+	//if(! (templatepath.search("mafBlack") > 0) )
+	//	return;
+	
+	var $element = $(element);
+    var colour = $element.css('color');
 	components = colour.substring(colour.indexOf('(') + 1, colour.lastIndexOf(')')).split(/,\s*/);
 	var r = parseInt(components[0]);
 	var g = parseInt(components[1]);
 	var b = parseInt(components[2]);
 	if ((r != 238 && r != 221) || (g != 238 && g != 221) || (b != 238 && b != 221)){
-		element.style.color = getLightestShade(r,g,b)
+		$element.css("color", getLightestShade(r,g,b));
 	}
 }
     
