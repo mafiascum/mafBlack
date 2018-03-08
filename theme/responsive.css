@@ -574,7 +574,7 @@
 		top: 20px;
 	}
 
-	.postprofile .username-coloured {
+	.postprofile .username-coloured, .postprofile .username {
 		position: absolute;
 		top: 5px;
 	}
