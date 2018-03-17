@@ -944,10 +944,10 @@ ul.cplist {
 
 /* Friends list */
 .cp-mini {
-  background-color: #f3f3f3; }
+  background-color: #666666; }
 
 dl.mini dt {
-  color: #555555; }
+  color: #fff; }
 
 /* PM Styles
 ----------------------------------------*/
