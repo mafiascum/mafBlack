@@ -393,14 +393,14 @@ blockquote blockquote blockquote {
 
 /* Code block */
 .codebox {
-  background-color: #fff;
-  border-color: #d1d1d1; }
+  background-color: #222;
+  border-color: #fff; }
 
 .codebox p {
   border-bottom-color: #ccc; }
 
 .codebox code {
-  color: #2E8B57; }
+  color: #00ee00; }
 
 .syntaxbg {
   color: #fff; }
@@ -953,7 +953,7 @@ dl.mini dt {
 ----------------------------------------*/
 /* PM Message history */
 .current {
-  color: #000 !important; }
+  color: #fff !important; }
 
 /* PM marking colours */
 .pmlist li.pm_message_reported_colour, .pm_message_reported_colour {

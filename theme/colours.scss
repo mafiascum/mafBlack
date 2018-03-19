@@ -504,8 +504,8 @@ blockquote blockquote blockquote {
 
 /* Code block */
 .codebox {
-	background-color: #fff;
-	border-color: desaturate(#C9D2D8, 100%);
+	background-color: #222;
+	border-color: #fff;
 }
 
 .codebox p {
@@ -513,7 +513,7 @@ blockquote blockquote blockquote {
 }
 
 .codebox code {
-	color: #2E8B57;
+	color: #00ee00;
 }
 
 .syntaxbg		{ color: #fff; }
@@ -986,18 +986,18 @@ $desaturatedCADCEB: desaturate(#CADCEB, 100%);
 
 /* Friends list */
 .cp-mini {
-	background-color: desaturate(#EEF5F9, 100%);
+	background-color: #666666;
 }
 
 dl.mini dt {
-	color: desaturate(#425067, 100%);
+	color: #fff;
 }
 
 /* PM Styles
 ----------------------------------------*/
 /* PM Message history */
 .current {
-	color: #000 !important;
+	color: #fff !important;
 }
 
 /* PM marking colours */
