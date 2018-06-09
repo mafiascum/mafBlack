@@ -671,6 +671,9 @@ Colours and backgrounds for buttons.css
 .phpbb_yahoo-icon {
   background-position: -224px 0; }
 
+.phpbb_wiki-icon {
+  background-image: none; }
+
 /* Forum icons & Topic icons */
 .global_read {
   background-image: url("./images/announce_read.gif"); }

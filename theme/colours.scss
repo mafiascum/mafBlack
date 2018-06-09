@@ -93,8 +93,6 @@ a:hover, a:focus {
 	background: #1a1a1a;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313131', endColorstr='#1b1b1b',GradientType=0 );
 	color: #fff;
-	border-top: 0;
-	border-bottom: 0;
 }
 
 .forabg, .forumbg {
@@ -1287,46 +1285,4 @@ li.notification-reported strong, li.notification-disapproved strong {
 .badge {
 	background-color: #D31141;
 	color: #fff;
-}
-
-/* msDark edits
------------------------------------------ */
-
-.page-body { /* msDark */
-	background-color: #1a1a1a;
-	color: #ccc;
-	h2 {
-		color: #ccc;
-	}
-}
-.recipients .recipients .button2 { /* msDark */
-	font-weight: bold;
-	padding: 0 3px 2px !important;
-}
-ul.cplist {
-	border-bottom-width:0 !important;
-	border-top-width: 0 !important;
-	.row {
-		border-bottom-width:0 !important;
-		border-top-width:0 !important;
-	}
-}
-#ucp li.header .list-inner {
-	padding-bottom: 7px;
-	padding-left: 8px;
-}
-
-p.author {
-	color: #ffcc66;
-}
-
-ul.topiclist {
-	li.header {
-		dl.row-item {
-			dd, dt {
-				color: #fff !important;
-				text-transform: uppercase;
-			}
-		}
-	}
 }
