@@ -85,8 +85,8 @@ a:hover, a:focus {
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .wrap {
-	background-color: #fff;
 	border-top-color: #111;
+	background-color: #1a1a1a;
 }
 
 .headerbar {
@@ -1285,4 +1285,37 @@ li.notification-reported strong, li.notification-disapproved strong {
 .badge {
 	background-color: #D31141;
 	color: #fff;
+}
+
+#search-box input.inputbox {
+	background: rgba(0,0,0,0.5);
+	color: #000;
+}
+
+#search-box button.button-search, #search-box a.button-search-end {
+	background: rgba(0,0,0,0.5);
+}
+
+#search-box button.button-search i, #search-box a.button-search-end i {
+	color: #FFFFFF;
+}
+
+#search-box input.inputbox::-webkit-input-placeholder {
+	color: #666;
+ }
+ 
+ #search-box input.inputbox:-moz-placeholder { /* Firefox 18- */
+	color: #666;  
+ }
+ 
+ #search-box input.inputbox::-moz-placeholder {  /* Firefox 19+ */
+	color: #666;  
+ }
+ 
+ #search-box input.inputbox:-ms-input-placeholder {  
+	color: #666;  
+ }
+
+ .username-coloured {
+	text-shadow: 1px 1px #000000
 }

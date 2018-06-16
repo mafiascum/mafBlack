@@ -26,7 +26,6 @@
 	max-width: none;
 	max-height: none;
 	border: none;
-	background-color: #1a1a1a;
 }
 
 .logo {
@@ -86,10 +85,6 @@
 		margin-top: initial;
 		margin-bottom: initial;
 	}
-}
-
-.username-coloured {
-	text-shadow: 1px 1px #000000
 }
 
 a.forumtitle {
@@ -359,40 +354,16 @@ input[type="number"] {
 }
 
 #search-box input.inputbox {
-	background: rgba(0,0,0,0.5);
 	padding: 10px;
-	color: #000;
 }
 
 #search-box button.button-search, #search-box a.button-search-end {
 	border: none;
-	background: rgba(0,0,0,0.5);
 	box-shadow: none;
-}
-
-#search-box button.button-search i, #search-box a.button-search-end i {
-	color: #FFFFFF;
 }
 
 #search-box button.button-search:hover, #search-box a.button-search-end:hover {
 	text-shadow: none;
-}
-
-
-#search-box input.inputbox::-webkit-input-placeholder {
-   color: #666;
-}
-
-#search-box input.inputbox:-moz-placeholder { /* Firefox 18- */
-   color: #666;  
-}
-
-#search-box input.inputbox::-moz-placeholder {  /* Firefox 19+ */
-   color: #666;  
-}
-
-#search-box input.inputbox:-ms-input-placeholder {  
-   color: #666;  
 }
 
 .search-header {
@@ -558,17 +529,14 @@ a.header-avatar span:after {
 	display: none;
 }
 
-.triangle {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 5px 5px 5px;
-	border-color: transparent transparent #ea8808 transparent; /* default */
-	border-color: transparent transparent #ef1128 transparent;
-	margin-top: -5px;
-	margin-left: 30px;
-}
-
 .navbar .icon {
 	width: 1.43em;
+}
+
+.bbvote {
+	font-weight: bold;
+    background: #FFFFFF;
+    color: #000;
+    padding: 0px 2px;
+    text-shadow: none;
 }

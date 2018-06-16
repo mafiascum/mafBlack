@@ -70,15 +70,13 @@ a:hover, a:focus {
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .wrap {
-  background-color: #fff;
-  border-top-color: #111; }
+  border-top-color: #111;
+  background-color: #1a1a1a; }
 
 .headerbar {
   background: #1a1a1a;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313131', endColorstr='#1b1b1b',GradientType=0 );
-  color: #fff;
-  border-top: 0;
-  border-bottom: 0; }
+  color: #fff; }
 
 .forabg, .forumbg {
   background-color: #000; }
@@ -671,9 +669,6 @@ Colours and backgrounds for buttons.css
 .phpbb_yahoo-icon {
   background-position: -224px 0; }
 
-.phpbb_wiki-icon {
-  background-image: none; }
-
 /* Forum icons & Topic icons */
 .global_read {
   background-image: url("./images/announce_read.gif"); }
@@ -1181,34 +1176,29 @@ li.notification-reported strong, li.notification-disapproved strong {
   background-color: #D31141;
   color: #fff; }
 
-/* msDark edits
------------------------------------------ */
-.page-body {
-  /* msDark */
-  background-color: #1a1a1a;
-  color: #ccc; }
-  .page-body h2 {
-    color: #ccc; }
+#search-box input.inputbox {
+  background: rgba(0, 0, 0, 0.5);
+  color: #000; }
 
-.recipients .recipients .button2 {
-  /* msDark */
-  font-weight: bold;
-  padding: 0 3px 2px !important; }
+#search-box button.button-search, #search-box a.button-search-end {
+  background: rgba(0, 0, 0, 0.5); }
 
-ul.cplist {
-  border-bottom-width: 0 !important;
-  border-top-width: 0 !important; }
-  ul.cplist .row {
-    border-bottom-width: 0 !important;
-    border-top-width: 0 !important; }
+#search-box button.button-search i, #search-box a.button-search-end i {
+  color: #FFFFFF; }
 
-#ucp li.header .list-inner {
-  padding-bottom: 7px;
-  padding-left: 8px; }
+#search-box input.inputbox::-webkit-input-placeholder {
+  color: #666; }
 
-p.author {
-  color: #ffcc66; }
+#search-box input.inputbox:-moz-placeholder {
+  /* Firefox 18- */
+  color: #666; }
 
-ul.topiclist li.header dl.row-item dd, ul.topiclist li.header dl.row-item dt {
-  color: #fff !important;
-  text-transform: uppercase; }
+#search-box input.inputbox::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #666; }
+
+#search-box input.inputbox:-ms-input-placeholder {
+  color: #666; }
+
+.username-coloured {
+  text-shadow: 1px 1px #000000; }
