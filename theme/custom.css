@@ -540,3 +540,11 @@ a.header-avatar span:after {
     padding: 0px 2px;
     text-shadow: none;
 }
+
+.bbtableheader {
+	border: 1px solid black;
+    padding: 3px;
+    color: #000000;
+    text-shadow: none;
+    background-color: #DDDDDD;
+}
