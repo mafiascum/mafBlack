@@ -74,9 +74,10 @@ a:hover, a:focus {
   background-color: #1a1a1a; }
 
 .headerbar {
-  background: #1a1a1a;
+  background: #000;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313131', endColorstr='#1b1b1b',GradientType=0 );
-  color: #fff; }
+  color: #fff; 
+  border-radius: 0px;}
 
 .forabg, .forumbg {
   background-color: #000; }
@@ -95,7 +96,7 @@ li.header {
 	**/ }
 
 .navbar {
-  background: #1a1a1a;
+  background: #333333;
   /**
 	border-top: 1px solid #434343;
 	border-bottom: 1px solid #505050;
@@ -126,20 +127,23 @@ li.header {
 
 .post:target h3 a {
   color: #fff; }
-
+li.row {
+	background-color: #333333;
+}
 .bg1 {
   background-color: #313131; }
   .bg1 .icon-gray {
     color: #ccc; }
-
+li.bg1 {
+  background-color: #313131; }
 table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
   background-color: #383838; }
-
 .bg2 {
-  background-color: #353535; }
+  background-color: #272727; }
   .bg2 .icon-gray {
     color: #ccc; }
-
+li.bg2 {
+  background-color: #272727; }
 table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
   background-color: #434343; }
 
@@ -147,7 +151,8 @@ table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
   background-color: #434343; }
   .bg3 .icon-gray {
     color: #ccc; }
-
+li.bg3 {
+  background-color: #434343; }
 .ucprowbg {
   background-color: #dfdfdf; }
 
@@ -301,9 +306,9 @@ ul.topiclist dd {
   border-left-color: transparent; }
 
 li.row {
-  background: #303030;
   border: 1px solid #000;
   /**
+	background: #303030;
 	background: #171717;
 	background: -moz-linear-gradient(top, #282828 0%, #171717 100%);
 	background: -webkit-linear-gradient(top, #282828 0%,#171717 100%);
@@ -927,7 +932,7 @@ ul.cplist {
 
 @media only screen and (max-width: 900px), only screen and (max-device-width: 900px) {
   #navigation a, .rtl #navigation a {
-    background: #c1c1c1; } }
+    background: #555; } }
 
 /* Preferences pane layout
 ----------------------------------------*/
@@ -1179,9 +1184,6 @@ li.notification-reported strong, li.notification-disapproved strong {
 #search-box input.inputbox {
   background: rgba(0, 0, 0, 0.5);
   color: #000; }
-
-#search-box button.button-search, #search-box a.button-search-end {
-  background: rgba(0, 0, 0, 0.5); }
 
 #search-box button.button-search i, #search-box a.button-search-end i {
   color: #FFFFFF; }
