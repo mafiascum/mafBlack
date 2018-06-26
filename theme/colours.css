@@ -10,11 +10,11 @@ h1 {
   color: #fff; }
 
 h2 {
-  color: #ffcc66; }
+ }
 
 h3 {
   border-bottom-color: #ccc;
-  color: #ffcc66; }
+ }
 
 hr {
   border-color: #ccc;
@@ -74,13 +74,13 @@ a:hover, a:focus {
   background-color: #1a1a1a; }
 
 .headerbar {
-  background: #000;
+  background: #111;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313131', endColorstr='#1b1b1b',GradientType=0 );
   color: #fff; 
   border-radius: 0px;}
 
 .forabg, .forumbg {
-  background-color: #000; }
+  background-color: #111; }
 
 li.header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0b407a+0,072747+100 */
@@ -340,7 +340,6 @@ li.row:hover dd {
   border-left-color: transparent; }
 
 li.header dt, li.header dd {
-  color: #ffcc66;
   text-shadow: 0 -1px 0 #2c2c2c; }
 
 /* Post body styles
@@ -528,7 +527,7 @@ fieldset.polls dd div {
   border-color: #aaa; }
 
 .postprofile strong {
-  color: #ffcc66; }
+ }
 
 .online {
   background-image: url("./en/icon_user_online.gif"); }
@@ -826,7 +825,7 @@ ul.cplist {
   border-top-color: silver; }
 
 .panel-container .panel li.header dd, .panel-container .panel li.header dt {
-  color: #ffcc66; }
+}
 
 .panel-container table.table1 thead th {
   color: #ccc;

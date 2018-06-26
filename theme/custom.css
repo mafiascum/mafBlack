@@ -47,20 +47,17 @@
 }
 
 @media (min-width: 850px) {
-	.postbody { width: 83%; }
+	.postbody { width: 82%; }
 	.postprofile {
 		margin-right: 1%;
 	}
 }
 @media (min-width: 700px) {
-	.postbody { width: 83%; }
+	.postbody { width: 82%; }
 	.postprofile {
 		margin-right: 1%;
 	}
 }
-.postbody {
-}
-
 @media (min-width: 701px) {
 
 	.post:not(.search) .postprofile dt {
@@ -326,7 +323,6 @@ fieldset.polls dd div {
 .postprofile {
 	width: 16%;
 	float: left;
-	border: none;
 }
 
 .postprofile dt.no-profile-rank, .postprofile dd.profile-rank, .postprofile .search-result-date {
@@ -335,11 +331,6 @@ fieldset.polls dd div {
 
 .postprofile .has-avatar .avatar-container {
 	margin-bottom: 15px;
-}
-
-.postprofile .avatar {
-	display: initial;
-	float: initial;
 }
 
 .postprofile .avatar img {
@@ -430,7 +421,7 @@ h2 {
 	border-radius: 7px;
 	border-top: none;
 	border-bottom: none;
-	padding: 3px 10px;
+	padding: 5px 10px;
 	margin: 5px 20px;
 }
 @media (max-width: 700px) {
@@ -611,4 +602,19 @@ ul.pmlist li.row dl.row-item {
   	.action-bar .search-box .inputbox ::-webkit-input-placeholder {
   		content: "Search...";
   	}
+}
+dl.row-item dd.topics,dl.row-item  dd.posts {
+	display : none;
+}
+.postbody {
+	float: right;
+}
+@media (max-width: 700px){
+	.headerbar + .navbar {
+		margin-top: 0px;
+	}
+	.post .postprofile {
+		width: auto;
+		float: none;
+	}
 }
