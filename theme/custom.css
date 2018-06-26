@@ -323,6 +323,7 @@ fieldset.polls dd div {
 .postprofile {
 	width: 16%;
 	float: left;
+	border: none;
 }
 
 .postprofile dt.no-profile-rank, .postprofile dd.profile-rank, .postprofile .search-result-date {
