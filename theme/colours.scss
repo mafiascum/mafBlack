@@ -37,6 +37,15 @@ a {
 a:hover, a:focus {
 	color: #efefef;
 }
+a:link, a:visited {
+	color: #7F3503;
+}
+a:visited {
+	color: #60391F;
+}
+a:active {
+	color: #B72724;
+}
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
@@ -67,6 +76,11 @@ a:hover, a:focus {
 	background-color: desaturate(#D0E4F6, 100%);
 	color: desaturate(#0D4473, 100%);
 }
+
+.postlink:active {
+	color: #B72724;
+}
+
 /**
 .signature a, .signature a:hover {
 	background-color: transparent;
@@ -1042,6 +1056,18 @@ select, input, .inputbox { /* msDark */
 	border-color: #880000;
 	border-radius: 2px;
 	padding: 2px;
+}
+
+.inputbox:focus {
+	border-color: #B70C09;
+}
+
+.inputbox:focus:-moz-placeholder {
+	border-color: #B70C09;
+}
+
+.inputbox:focus::-webkit-input-placeholder {
+	border-color: #B70C09;
 }
 
 select {
