@@ -170,8 +170,7 @@ table.table1 thead th {
   color: #fff;
   background-color: #2c2c2c;
   padding: 10px 5px;
-  border-bottom: 5px solid #EE8B0A;
-  border-bottom: 5px solid #ef1128; }
+}
 
 table.table1 tbody tr {
   border-color: #777; }
@@ -517,7 +516,7 @@ fieldset.polls dd div {
 
 /* Poster profile block
 ----------------------------------------*/
-.postprofile {
+.postprofilepostprofile {
   color: #dfdfdf;
   border-color: #aaa; }
   .postprofile dd:not(.profile-rank) {
