@@ -671,3 +671,8 @@ ul.topiclist dt {
 		margin-left : 5px;
 	}
 }
+
+.postbody table {
+	border-collapse: separate;
+	border-spacing: 2px;
+}
