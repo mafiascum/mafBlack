@@ -323,7 +323,6 @@ fieldset.polls dd div {
 .postprofile {
 	width: 16%;
 	float: left;
-	border: none;
 }
 
 .postprofile dt.no-profile-rank, .postprofile dd.profile-rank, .postprofile .search-result-date {
@@ -479,11 +478,6 @@ ul.topiclist.forums li.row, ul.topiclist.topics li.row {
 	margin-bottom: 15px;
 	padding: 10px;
 }
-
-.post {
-	padding: 20px;
-}
-
 .navbar ul.linklist {
 	padding: 0;
 }
@@ -574,6 +568,11 @@ ul.pmlist li.row dl.row-item {
 .site-description {
 	width : auto;
 }
+@media (max-width: 700px){
+	.responsive-show {
+		display: none !important;
+	}
+}
 @media (max-width: 750px) {
 	i.fa-bell + span {
 		display: none;
@@ -612,8 +611,6 @@ dl.row-item dd.topics,dl.row-item  dd.posts {
 }
 .post .postprofile {
 	border: none;
-	border-right-width: 1px;
-	border-right-style: solid;
 }
 dl.row-item  dd.views {
 	display: none;
@@ -625,6 +622,17 @@ ul.topiclist dt {
 	margin-right: -250px;
 }
 @media (max-width: 700px){
+	.profile-rank img {
+		float: left;
+	}
+	ul.topiclist dt .list-inner {
+		margin-right: 0px;
+	}
+	.headerbar, .navbar, .forabg, .forumbg, .post, .panel {
+		border-radius: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 	.headerbar + .navbar {
 		margin-top: 0px;
 	}
