@@ -670,6 +670,9 @@ ul.topiclist dt {
 	tbody tr td dfn, tbody tr td strong {
 		margin-left : 5px;
 	}
+	h2 {
+		margin-left: 5px;
+	}
 }
 
 .postbody table {
