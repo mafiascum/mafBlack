@@ -678,6 +678,9 @@ ul.topiclist dt {
 	.group-title ~ p {
 		margin-left: 5px;
 	}
+	.column1,.column2 {
+		clear: both;
+	}
 }
 
 .postbody table {
