@@ -226,6 +226,7 @@ dd.posts, dd.topics, dd.views, dd.extra, dd.mark {
 .postbody h3 {
 	font-size: 1em;
 	font-family: inherit;
+	color: #FFCC66;
 }
 
 .postbody .content {
@@ -246,7 +247,8 @@ dl.faq {
 }
 
 p.author {
-	padding: 0 0 20px 0;
+	padding: 0 0 0 0;
+	color: #FFCC66 !important;
 	font-family: inherit;
 }
 
