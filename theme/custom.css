@@ -39,9 +39,14 @@ blockquote {
 	border: none;
 }
 
-
-#ch {
-	color: #000;
+input {
+	background-color: #eee;
 	border-color: #999;
-	border: 1px solid transparent;
+	color: #000;
+	border: 1px solid;
+	border-radius: 2px;
+	padding: 2px;
+}
+input:hover {
+	border-color: #ccc;
 }
