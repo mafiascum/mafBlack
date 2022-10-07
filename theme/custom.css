@@ -50,3 +50,21 @@ input {
 input:hover {
 	border-color: #ccc;
 }
+
+h2 {
+	color: #dcdcdc;
+}
+
+.activity-overview th span {
+	color: #ccc;
+}
+
+.activity-overview caption {
+	color: #dcdcdc;
+}
+
+@-moz-document url-prefix() {
+	.display-options {
+		overflow-y: scroll;
+	}
+}
