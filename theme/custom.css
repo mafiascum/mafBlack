@@ -68,3 +68,15 @@ h2 {
 		overflow-y: scroll;
 	}
 }
+
+.postbody {
+	text-shadow: 1px 1px #000;
+}
+
+.postlink {
+	color: #fff;
+}
+
+.postbody a {
+	color: #fff;
+}
