@@ -85,3 +85,7 @@ h2 {
 .topiclist.topics dl.row-item dt .list-inner {
 	padding-left: 57px;
 }
+
+.forabg, .forumbg {
+	padding: 0;
+}
