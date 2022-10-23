@@ -80,3 +80,8 @@ h2 {
 .postbody a {
 	color: #fff;
 }
+
+.topiclist.forums dl.row-item dt .list-inner,
+.topiclist.topics dl.row-item dt .list-inner {
+	padding-left: 57px;
+}
