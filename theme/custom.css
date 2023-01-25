@@ -89,3 +89,9 @@ h2 {
 .forabg, .forumbg {
 	padding: 0;
 }
+
+.private .dropdown,
+.private .dropdown a,
+.private .dropdown a:hover {
+	color: #fff !important;
+}
